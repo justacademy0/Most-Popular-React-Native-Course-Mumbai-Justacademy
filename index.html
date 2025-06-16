@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most Popular React Native Course in Mumbai | JustAcademy</title>
+    <meta name="description" content="Join Mumbai's #1 React Native training at JustAcademy. Learn from industry experts with hands-on projects. Book a free demo session today!">
+    <meta name="keywords" content="most popular react native course mumbai, react native training mumbai, best react native classes, mobile app development course, react native certification, justacademy mumbai, learn react native, react native course near me">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --accent: #B51D74;
+            --accent-light: #d84d9a;
+            --accent-dark: #8c1655;
+            --dark: #222;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Header Styles */
+        header {
+            background: white;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            color: var(--accent);
+            font-weight: 800;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            color: var(--accent);
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 2px solid var(--accent);
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(181, 29, 116, 0.2);
+        }
+        
+        .btn:hover {
+            background: var(--accent-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(181, 29, 116, 0.3);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--accent);
+        }
+        
+        .btn-outline:hover {
+            background: var(--accent);
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: #2c3e50;
+            border-color: #2c3e50;
+        }
+        
+        .btn-secondary:hover {
+            background: #1a252f;
+        }
+        
+        /* Hero Section with Animated Background */
+        .hero {
+            text-align: center;
+            padding: 6rem 0;
+            position: relative;
+            overflow: hidden;
+            color: white;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #8a2387, #e94057, #f27121);
+            background-size: 300% 300%;
+            animation: gradientBG 12s ease infinite;
+            z-index: -2;
+        }
+        
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+        
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            animation: fadeInDown 1s ease;
+        }
+        
+        .hero-highlight {
+            color: var(--accent-light);
+            text-shadow: 0 0 10px rgba(255,255,255,0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0;
+            animation: fadeIn 1s ease 0.5s forwards;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 2rem;
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--accent);
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+        
+        /* Modules Section */
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .module-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-left: 4px solid var(--accent);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .module-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(181, 29, 116, 0.15);
+        }
+        
+        .module-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: linear-gradient(to right, var(--accent), var(--accent-light));
+            opacity: 0.1;
+            transition: height 0.4s ease;
+            z-index: 0;
+        }
+        
+        .module-card:hover::before {
+            height: 100%;
+        }
+        
+        .module-number {
+            background: var(--accent);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        
+        .module-title {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(181, 29, 116, 0.15);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            background: linear-gradient(to right, #f8f9fa, #ffffff);
+            border-radius: 15px;
+            padding: 4rem 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin: 0 auto;
+            max-width: 900px;
+        }
+        
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 2rem;
+        }
+        
+        .contact-info {
+            background: white;
+            border-radius: 10px;
+            padding: 2.5rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-icon {
+            color: var(--accent);
+            font-size: 1.5rem;
+            margin-right: 15px;
+            min-width: 30px;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0 2rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .copyright {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .hero { padding: 4rem 0; }
+            .header-content { flex-direction: column; gap: 15px; }
+            .hero-buttons { flex-direction: column; }
+            .section-title { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    JustAcademy
+                </div>
+                <div class="nav-buttons">
+                    <a href="#contact" class="btn btn-outline">Contact Us</a>
+                    <a href="https://www.justacademy.co/" class="btn">Explore Courses</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Most Popular <span class="hero-highlight">React Native</span> Course in Mumbai</h1>
+            <p class="hero-subtitle">Master mobile app development with our industry-leading training program. Learn from experts and build real-world applications with 100% placement support.</p>
+            <div class="hero-buttons">
+                <a href="https://www.justacademy.co/register-for-course-demo" class="btn">Book Free Demo Session</a>
+                <a href="https://www.justacademy.co/student-placed" class="btn btn-secondary">View Placements</a>
+                <a href="https://www.justacademy.co/course-detail/react-native-training" class="btn btn-outline">Course Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Modules -->
+    <section class="container">
+        <h2 class="section-title">Comprehensive Course Modules</h2>
+        <div class="modules-grid">
+            <div class="module-card animate-on-scroll">
+                <div class="module-number">1</div>
+                <h3 class="module-title">React Native Fundamentals</h3>
+                <p>Introduction to React Native, Environment Setup, Core Components, Styling, Layouts with Flexbox</p>
+            </div>
+            
+            <div class="module-card animate-on-scroll">
+                <div class="module-number">2</div>
+                <h3 class="module-title">Navigation & State Management</h3>
+                <p>React Navigation, Redux, Context API, Handling User Input, Forms Management</p>
+            </div>
+            
+            <div class="module-card animate-on-scroll">
+                <div class="module-number">3</div>
+                <h3 class="module-title">Working with APIs</h3>
+                <p>Fetch API, Axios, Authentication, AsyncStorage, RESTful APIs Integration</p>
+            </div>
+            
+            <div class="module-card animate-on-scroll">
+                <div class="module-number">4</div>
+                <h3 class="module-title">Advanced Concepts</h3>
+                <p>Native Modules, Animations, Performance Optimization, Debugging Techniques</p>
+            </div>
+            
+            <div class="module-card animate-on-scroll">
+                <div class="module-number">5</div>
+                <h3 class="module-title">Project Development</h3>
+                <p>Building Complete Applications, Testing, Deployment to App Stores, Final Project</p>
+            </div>
+            
+            <div class="module-card animate-on-scroll">
+                <div class="module-number">6</div>
+                <h3 class="module-title">Career Preparation</h3>
+                <p>Resume Building, Interview Preparation, Portfolio Development, Job Placement Assistance</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="container">
+        <h2 class="section-title">Why Choose Our React Native Course?</h2>
+        <div class="features">
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3>Expert Instructors</h3>
+                <p>Learn from industry professionals with 8+ years of experience in mobile app development</p>
+            </div>
+            
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Hands-on Projects</h3>
+                <p>Build 5+ real-world applications during the course with practical implementation</p>
+            </div>
+            
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3>100% Placement Support</h3>
+                <p>Get dedicated assistance with resume building, interviews, and job placement</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="container">
+        <div class="cta-section animate-on-scroll">
+            <h2 style="margin-bottom: 1.5rem;">Ready to Launch Your Tech Career?</h2>
+            <p style="margin-bottom: 2.5rem; font-size: 1.2rem;">Join Mumbai's most popular React Native training program and become a mobile app development expert in just 12 weeks!</p>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="https://www.justacademy.co/register-for-course-demo" class="btn">Book Free Demo Session</a>
+                <a href="https://www.justacademy.co/student-placed" class="btn btn-secondary">View Placements</a>
+                <a href="tel:+919987184296" class="btn btn-outline">Call Us Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info animate-on-scroll">
+                <h3 style="margin-bottom: 1.5rem; color: var(--accent);">Our Mumbai Campus</h3>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Address</h4>
+                        <p>Office no : 318, Imperia T2 Commercial,<br>
+                        JP-North, Mira Bhayander Rd,<br>
+                        Near to Arkade Art Complex,<br>
+                        Vinay Nagar, Kashimira, Mira Road,<br>
+                        Mumbai, Maharashtra 401107</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p>+91-9987184296</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4>Call Us</h4>
+                        <p>+91-9987184296</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>info@justacademy.co</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-info animate-on-scroll">
+                <h3 style="margin-bottom: 1.5rem; color: var(--accent);">Course Details</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                        <h4>Duration</h4>
+                        <p>12 Weeks (Weekday & Weekend Batches Available)</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div>
+                        <h4>Certification</h4>
+                        <p>Industry-recognized certificate upon completion</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h4>Batch Size</h4>
+                        <p>Limited seats for personalized attention</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <div>
+                        <h4>Fee Structure</h4>
+                        <p>Affordable pricing with EMI options available</p>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 2rem;">
+                    <a href="https://www.justacademy.co/register-for-course-demo" class="btn" style="width: 100%;">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3 style="margin-bottom: 1.5rem;">Most Popular React Native Course in Mumbai</h3>
+                <p>Transform your career with industry-leading mobile app development training</p>
+                
+                <div class="copyright">
+                    <p>© 2023 JustAcademy - All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll('.animate-on-scroll');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            animateElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
